@@ -6,13 +6,13 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 
-public class registrationform extends JFrame {
+public class form extends JFrame {
     Connection con = null;
     PreparedStatement pst = null;
     int lasts_id;
     ResultSet rs = null;
 
-    public registrationform() {
+    public form() {
         initComponents();
     }
     
@@ -236,7 +236,7 @@ public class registrationform extends JFrame {
     public static void main(String args[]) {
         EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new registrationform().setVisible(true);
+                new form().setVisible(true);
             }
         });
     }
